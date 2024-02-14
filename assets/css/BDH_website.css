@@ -14,7 +14,28 @@
 
       @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
 
-      body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, figure, figcaption, blockquote, dl, dd {
+      body {
+         /*font-family渲染不到，寫在內聯樣式（要使用的每個頁面<style>都要引用）*/
+         font-family: "Playfair Display", serif;
+      }
+
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ul,
+      ol,
+      li,
+      img,
+      figure,
+      figcaption,
+      blockquote,
+      dl,
+      dd {
          margin: 0;
          padding: 0;
          list-style: none;
@@ -25,17 +46,37 @@
          color: inherit;
          box-sizing: border-box;
       }
-      
-      body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, figure, figcaption, blockquote, dl, dd:focus {
+
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ul,
+      ol,
+      li,
+      img,
+      figure,
+      figcaption,
+      blockquote,
+      dl,
+      dd:focus {
          outline: 0;
       }
-      
-      body {
-         font-family: "Raleway", sans-serif;
+
+      .label-24 {
+         font-size: 24px;
       }
-      
+
+      .label-18 {
+         font-size: 18px;
+      }
+
       .mainNav {
-         width: 100%;
+         width: 96%;
          height: 80px;
          position: absolute;
          z-index: 1;
@@ -44,31 +85,43 @@
          align-items: center;
          color: #9197ae;
          text-transform: uppercase;
+         left: 4%;
          /*padding: 0 40px;*/
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainNav {
-            padding: 0 20px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 60px;
          }
       }
-      
+
       .mainNav__logo {
          font-weight: 800;
          letter-spacing: 1px;
          font-size: 18px;
+         transform: rotate(-45deg);
       }
-      
+
+      @media screen and (max-width: 799px) {
+         .mainNav__logo {
+            margin-top: 975px;
+
+         }
+      }
+
       .mainNav__links {
          display: flex;
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainNav__links {
-            display: none;
+            padding-top: 20px;
+            display: grid;
          }
       }
-      
+
       .mainNav__link {
          letter-spacing: 1px;
          font-size: 14px;
@@ -79,12 +132,12 @@
          padding: 2px 4px;
          transform: translateY(0px);
       }
-      
+
       .mainNav__link:hover {
          transform: translateY(-5px);
          box-shadow: inset 0px -20px 0px white;
       }
-      
+
       .mainNav__icon {
          background-image: url(https://rafaelalucas91.github.io/assets/icons/black/icon-141.svg);
          width: 32px;
@@ -94,29 +147,37 @@
          background-position: center;
          display: none;
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainNav__icon {
             display: block;
          }
       }
-      
+
       .mainHeading {
-         width: 100%;
+         top: 60px;
+         left: 10%;
+         width: 90%;
          height: 100%;
          position: relative;
-         /*padding: 0 40px;*/
-         background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         /*Background-image使用內聯樣式*/
+         /*background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);*/
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainHeading {
             padding: 0 20px;
+            left: 0;
+            width: 100%;
+            top: 100px;
+            background-position: center;
          }
       }
-      
+
       .mainHeading__content {
-         max-width: 1110px;
          min-height: 600px;
          left: 50%;
          transform: translateX(-50%);
@@ -125,26 +186,26 @@
          align-items: center;
          position: relative;
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainHeading__content {
             min-height: 500px;
          }
       }
-      
+
       .mainHeading__text {
+         top: -196px;
+         height: 328px;
          z-index: 1;
-         color: #637498;
-         background-color: rgba(white, 0.2);
+         color: #fff;
+         background-color: #0168b8;
          padding: 40px;
          max-width: 620px;
-         margin-top: 100px;
          width: 70%;
-         backdrop-filter: blur(8px);
          animation: text 0.8s 0.6s ease backwards;
          position: relative;
       }
-      
+
       .mainHeading__text:before {
          content: "";
          position: absolute;
@@ -155,7 +216,7 @@
          left: 0;
          animation: line 0.8s 0.6s ease backwards;
       }
-      
+
       @keyframes line {
          0% {
             right: 0;
@@ -163,282 +224,267 @@
             opacity: 0;
          }
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainHeading__text {
             padding: 20px;
-            margin: 90px 0 40px 0;
+            margin: -68px 0 40px -20px;
+            height: 200px;
+            width: 315px;
          }
       }
-      
+
       @keyframes text {
          0% {
             opacity: 0;
             transform: translateX(200px);
          }
       }
-      
+
       .mainHeading__preTitle {
          text-transform: uppercase;
          font-weight: 600;
          letter-spacing: 2px;
          margin-bottom: 16px;
-         color: #637498;
+         color: #fff;
       }
-      
+
+      @media (max-width: 799px) {
+         .mainHeading__preTitle {
+            position: relative;
+            color: #0168b8;
+            left: 30px;
+            top: 30px;
+         }
+      }
+
       .mainHeading__title {
-         text-transform: uppercase;
-         font-weight: 200;
+         font-weight: revert-layer;
          letter-spacing: 2px;
          margin-bottom: 24px;
-         font-size: 40px;
-         color: #637498;
+         font-size: 72px;
+         color: #fff;
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainHeading__title {
             margin-bottom: 16px;
+            font-size: 54px;
+         }
+      }
+
+      .mainHeading__description {
+         letter-spacing: 0.5px;
+         font-size: 24px;
+         line-height: 26px;
+         font-weight: revert-layer;
+      }
+
+      @media screen and (max-width: 799px) {
+         .mainHeading__description {
             font-size: 28px;
          }
       }
-      
-      .mainHeading__description {
-         letter-spacing: 0.5px;
-         font-size: 16px;
-         line-height: 26px;
-      }
-      
-      @media screen and (max-width: 799px) {
-         .mainHeading__description {
-            font-size: 14px;
-         }
-      }
-      
+
       .mainHeading__image {
-         right: 0;
+         top: -170px;
+         left: 0;
          max-width: 600px;
          width: 60%;
-         height: 600px;
+         height: 300px;
          transform: translateY(100px);
          position: absolute;
          overflow: hidden;
          animation: image 0.6s 0.2s ease backwards;
+         background-color: #0168b8;
+
       }
-      
+
       @media screen and (max-width: 799px) {
          .mainHeading__image {
             height: 480px;
             width: 70%;
             transform: translateY(80px);
-            right: -6%;
+            left: -6%;
          }
       }
-      
+
       @keyframes image {
          0% {
             opacity: 0;
             transform: translateY(200px);
          }
       }
-      
-      .mainHeading__image:before, .mainHeading__image:after {
+
+      .mainHeading__image:before,
+      .mainHeading__image:after {
          content: "";
          position: absolute;
          width: 100%;
          height: 0%;
          top: 100%;
-         background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+         background-color: #0168b8;
          opacity: 1;
          left: 0;
       }
-      
+
       .mainHeading__image:before {
          animation: imageBefore 1s 0.2s ease backwards;
       }
-      
+
       @keyframes imageBefore {
          0% {
             height: 100%;
             top: 0;
          }
       }
-      
+
       .mainHeading__image:after {
-         background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+         background-color: #0168b8;
          height: 100%;
          top: 0;
          opacity: 0.2;
       }
-      
+
       .mainHeading__image img {
          width: 100%;
          height: 100%;
       }
-      
-      .cta {
-         padding: 16px 32px;
-         color: #637498;
-         background-color: transparent;
-         border: 1px solid rgba(99, 116, 152, 0.4);
-         font-family: "Raleway", sans-serif;
-         text-transform: uppercase;
-         letter-spacing: 2px;
-         font-weight: 600;
-         margin-top: 32px;
-         cursor: pointer;
-         box-shadow: inset 0px 0px 0px rgba(99, 116, 152, 0.2);
-         transition: all 0.4s ease;
-      }
-      
-      .cta:hover {
-         border: 1px solid rgba(99, 116, 152, 0.1);
-         box-shadow: inset 0px -80px 0px rgba(99, 116, 152, 0.1);
-         transform: translateY(-5px);
-      }
-      
-      @media screen and (max-width: 799px) {
-         .cta {
-            margin-top: 16px;
+
+      @media screen and (max-width: 999px) {
+         .mobile-hidden {
+            display: none;
          }
       }
-      
-      .about {
-         position: fixed;
-         z-index: 10;
-         bottom: 10px;
-         right: 10px;
-         width: 40px;
-         height: 40px;
+
+      .steps {
          display: flex;
-         justify-content: flex-end;
-         align-items: flex-end;
-         transition: all 0.2s ease;
+         flex-direction: column;
+         align-items: flex-start;
+         font-size: 24px;
       }
-      
-      .about .bg_links {
-         width: 40px;
-         height: 40px;
-         border-radius: 100%;
+
+      @media screen and (max-width: 999px) {
+         .steps {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px;
+            padding-left: 30px !important;
+         }
+
+         .steps>div {
+            flex-basis: 48%;
+         }
+
+         .steps>div:last-child {
+            flex-basis: 100%;
+            padding-top: 20px;
+         }
+      }
+
+      .breadcrumb_custom {
+         display: none;
+      }
+
+      @media screen and (max-width: 799px) {
+         .breadcrumb_custom {
+            display: block;
+         }
+      }
+
+      .info-button {
+         background-color: #0168b8;
+         color: white;
+         border: none;
+         padding: 10px 10px;
+         font-size: 24px;
+         cursor: pointer;
          display: flex;
-         justify-content: center;
+         justify-content: space-between;
          align-items: center;
-         background-color: rgba(0, 0, 0, 0.2);
-         border-radius: 100%;
-         backdrop-filter: blur(5px);
-         position: absolute;
+         width: 200px;
       }
-      
-      .about .logo {
-         width: 40px;
-         height: 40px;
-         z-index: 9;
-         background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
-         background-size: 50%;
-         background-repeat: no-repeat;
-         background-position: 10px 7px;
-         opacity: 0.9;
-         transition: all 1s 0.2s ease;
-         bottom: 0;
-         right: 0;
+
+      .info-button:hover {
+         background-color: #01579b;
       }
-      
-      .about .social {
-         opacity: 0;
-         right: 0;
-         bottom: 0;
+
+      @media screen and (max-width: 799px) {
+         .info-button {
+            width: 96%;
+         }
+
       }
-      
-      .about .social .icon {
+
+      .notActive {
+         color: #c6c4c3;
+      }
+
+      .active {
+         color: #0168b8;
+      }
+
+      .arrow-right {
+         margin-left: 20px;
+      }
+
+      .input-area {
          width: 100%;
-         height: 100%;
-         background-size: 20px;
-         background-repeat: no-repeat;
-         background-position: center;
-         background-color: transparent;
+         height: 80px;
+         border: none;
+         background-color: #f0f0f0;
+         padding-left: 15px;
+         font-size: 20px;
+      }
+
+      .gradient-line {
+         position: absolute;
+         top: 50%;
+         width: 100%;
+         height: 1px;
+         background: linear-gradient(to right, rgba(0, 0, 0, 0), #fff);
+         border: none;
+         background-color: black;
+      }
+
+      .card-title {
+         padding-left: 10px;
+
+      }
+
+      .right-side {
+         float: right;
+         margin-right: 15px;
+      }
+
+      .rounded-btn {
+         border-radius: 50%;
+         width: 50px;
+         height: 50px;
+         background-color: #0168b8;
+         color: white;
+         border: none;
+      }
+
+      .end-line {
+         position: absolute;
+         top: 50%;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         border: none;
+         background-color: lightgrey;
+      }
+
+      footer .row {
          display: flex;
-         transition: all 0.2s ease, background-color 0.4s ease;
-         opacity: 0;
-         border-radius: 100%;
+         align-items: end;
+         height: 100%;
+         padding: 30px 10px 30px 10px;
       }
-      
-      .about .social.portfolio {
-         transition: all 0.8s ease;
-      }
-      
-      .about .social.portfolio .icon {
-         background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
-      }
-      
-      .about .social.dribbble {
-         transition: all 0.3s ease;
-      }
-      
-      .about .social.dribbble .icon {
-         background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
-      }
-      
-      .about .social.linkedin {
-         transition: all 0.8s ease;
-      }
-      
-      .about .social.linkedin .icon {
-         background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
-      }
-      
-      .about:hover {
-         width: 105px;
-         height: 105px;
-         transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-      }
-      
-      .about:hover .logo {
-         opacity: 1;
-         transition: all 0.6s ease;
-      }
-      
-      .about:hover .social {
-         opacity: 1;
-      }
-      
-      .about:hover .social .icon {
-         opacity: 0.9;
-      }
-      
-      .about:hover .social:hover {
-         background-size: 28px;
-      }
-      
-      .about:hover .social:hover .icon {
-         background-size: 65%;
-         opacity: 1;
-      }
-      
-      .about:hover .social.portfolio {
-         right: 0;
-         bottom: calc(100% - 40px);
-         transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-      }
-      
-      .about:hover .social.portfolio .icon:hover {
-         background-color: #698fb7;
-      }
-      
-      .about:hover .social.dribbble {
-         bottom: 45%;
-         right: 45%;
-         transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-      }
-      
-      .about:hover .social.dribbble .icon:hover {
-         background-color: #ea4c89;
-      }
-      
-      .about:hover .social.linkedin {
-         bottom: 0;
-         right: calc(100% - 40px);
-         transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-      }
-      
-      .about:hover .social.linkedin .icon:hover {
-         background-color: #0077b5;
+
+      .go-top {
+         font-size: 48px !important;
+         transform: rotate(-90deg);
       }
