@@ -496,3 +496,29 @@
          font-size: 48px !important;
          transform: rotate(-90deg);
       }
+
+      .grey-line {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      border: none;
+      background-color: lightgrey;
+      }
+      
+      .binary_button {
+      padding: 10px 10px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      margin: 0 10px;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      }
+      
+      .binary_button.selected {
+      color: blue;
+      }
