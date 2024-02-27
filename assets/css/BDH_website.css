@@ -89,10 +89,8 @@
          position: absolute;
          z-index: 1;
          display: flex;
-         flex-direction: column;
          justify-content: space-between;
-         align-items: flex-start; 
-         justify-content: flex-start;
+         align-items: center;
          color: #9197ae;
          text-transform: uppercase;
          left: 4%;
@@ -107,6 +105,29 @@
          }
       }
 
+      .mainNav_ClassSchedule {
+         width: 96%;
+         height: 80px;
+         position: absolute;
+         z-index: 1;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: flex-start; 
+         justify-content: flex-start;
+         color: #9197ae;
+         text-transform: uppercase;
+         left: 4%;
+      }
+
+      @media screen and (max-width: 799px) {
+         .mainNav_ClassSchedule {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 60px;
+         }
+      } 
+
       .mainNav__logo {
          font-weight: 800;
          letter-spacing: 1px;
@@ -116,6 +137,19 @@
 
       @media screen and (max-width: 799px) {
          .mainNav__logo {
+            margin-top: 975px;
+
+         }
+      }
+
+      .mainNav__midLogo{
+         padding-top: 25%; 
+         margin-left: -3%;
+
+      }
+
+      @media screen and (max-width: 799px) {
+         .mainNav__midLogo {
             margin-top: 975px;
 
          }
@@ -272,6 +306,39 @@
          0% {
             opacity: 0;
             transform: translateX(200px);
+         }
+      }
+
+      .mainHeading__text_ClassSchedule {
+         top: -196px;
+         height: 328px;
+         z-index: 1;
+         color: #fff;
+         background-color: #0168b8;
+         padding: 40px;
+         max-width: 620px;
+         width: 70%;
+         animation: text 0.8s 0.6s ease backwards;
+         position: relative;
+      }
+
+      .mainHeading__text_ClassSchedule:before {
+         content: "";
+         position: absolute;
+         width: 5px;
+         height: 100%;
+         background-color: rgba(white, 0.5);
+         top: 0;
+         left: 0;
+         animation: line 0.8s 0.6s ease backwards;
+      }
+
+      @media screen and (max-width: 799px) {
+         .mainHeading__text_ClassSchedule {
+            padding: 20px;
+            margin: -68px 0 40px -20px;
+            height: 200px;
+            width: 315px;
          }
       }
 
