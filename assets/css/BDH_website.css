@@ -188,6 +188,29 @@
          }
       }
 
+      .mainHeading_ClassSchedule {
+         top: 60px;
+         left: 15%;
+         width: 85%;
+         height: 100%;
+         position: relative;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         /*Background-image使用內聯樣式*/
+         /*background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);*/
+      }
+
+      @media screen and (max-width: 799px) {
+         .mainHeading_ClassSchedule {
+            padding: 0 20px;
+            left: 0;
+            width: 100%;
+            top: 100px;
+            background-position: center;
+         }
+      }
+
       .mainHeading__content {
          min-height: 600px;
          left: 50%;
