@@ -150,7 +150,7 @@
 
       @media screen and (max-width: 799px) {
          .mainNav__midLogo {
-            margin-top: 975px;
+            transform: translateY(380%);
 
          }
       }
@@ -313,8 +313,8 @@
          top: -196px;
          height: 328px;
          z-index: 1;
-         color: #fff;
-         background-color: #0168b8;
+         color: #0168b8;
+         background-color: #fff;
          padding: 40px;
          max-width: 620px;
          width: 70%;
@@ -336,8 +336,8 @@
       @media screen and (max-width: 799px) {
          .mainHeading__text_ClassSchedule {
             padding: 20px;
-            margin: -68px 0 40px -20px;
-            height: 200px;
+            margin: -34px 0 40px -20px;
+            height: 300px;
             width: 315px;
          }
       }
@@ -359,6 +359,23 @@
          }
       }
 
+      .mainHeading__preTitle_ClassSchedule {
+         text-transform: uppercase;
+         font-weight: 600;
+         letter-spacing: 2px;
+         margin-bottom: 16px;
+         color: #0168b8;
+      }
+
+      @media (max-width: 799px) {
+         .mainHeading__preTitle_ClassSchedule {
+            position: relative;
+            color: #fff;
+            left: 30px;
+            top: 30px;
+         }
+      }
+
       .mainHeading__title {
          font-weight: revert-layer;
          letter-spacing: 2px;
@@ -370,7 +387,7 @@
       @media screen and (max-width: 799px) {
          .mainHeading__title {
             margin-bottom: 16px;
-            font-size: 54px;
+            font-size: 53px;
          }
       }
 
