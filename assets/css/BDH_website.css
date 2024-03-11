@@ -143,16 +143,20 @@
       }
 
       .mainNav__midLogo{
-         padding-top: 25%; 
+         padding-top: 360px; 
          margin-left: -3%;
-
       }
 
       @media screen and (max-width: 799px) {
          .mainNav__midLogo {
             transform: translateY(380%);
-
-         }
+            /* padding-top: 70px; */
+            margin-bottom: -288px;
+            margin-left: -5%;
+            background-color: #f4f4f3;
+            padding: 0;
+            }
+         
       }
 
       .mainNav__links {
@@ -167,6 +171,17 @@
          }
       }
 
+      .mainNav__links_footer {
+         padding-top: 20px;
+         display: grid;
+      }
+
+      @media screen and (max-width: 799px) {
+         .mainNav__links_footer {
+            
+         }
+      }
+
       .mainNav__link {
          letter-spacing: 1px;
          font-size: 16px;
@@ -176,6 +191,7 @@
          transition: all 0.4s ease, transform 0.2s ease;
          padding: 10px 0;
          transform: translateY(0px);
+         color: #595757;
       }
 
       .mainNav__link:hover {
@@ -632,3 +648,515 @@
       .binary_button.selected {
       color: blue;
       }
+
+
+
+
+      /*--  START 課程時間表(報名＆課程時間表) -- */
+      .section-padding2 {
+         padding-top: 200px;
+         padding-bottom: 200px;
+         }
+         
+         @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+         .section-padding2 {
+         padding-top: 200px;
+         padding-bottom: 200px;
+         }
+         }
+         
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .section-padding2 {
+         padding-top: 200px;
+         padding-bottom: 200px;
+         }
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .section-padding2 {
+         padding-top: 100px;
+         padding-bottom: 100px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .section-padding2 {
+         padding-top: 70px;
+         padding-bottom: 70px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .section-padding2 {
+         padding-top: 70px;
+         padding-bottom: 70px;
+         }
+         }
+         
+         .pb-bottom {
+         padding-bottom: 180px;
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .pb-bottom {
+         padding-bottom: 50px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .pb-bottom {
+         padding-bottom: 10px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .pb-bottom {
+         padding-bottom: 10px;
+         }
+         }
+         
+         .pb-top {
+         padding-top: 200px;
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .pb-top {
+         padding-top: 70px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .pb-top {
+         padding-top: 70px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .pb-top {
+         padding-top: 70px;
+         }
+         }
+         
+         .w-padding2 {
+         padding: 80px 30px;
+         }
+         
+         @media (max-width: 575px) {
+         .w-padding2 {
+         padding: 70px 20px;
+         }
+         }
+         
+         
+         /* line 818, C:/Users/HP/Desktop/jun-2020/279.Business/assets/scss/_common.scss */
+         .w-padding {
+         padding-top: 100px;
+         padding-bottom: 95px;
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .w-padding {
+         padding-top: 70px;
+         padding-bottom: 70px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .w-padding {
+         padding-top: 70px;
+         padding-bottom: 70px;
+         }
+         }
+         
+         .section-padding30 {
+         padding-top: 195px;
+         padding-bottom: 180px;
+         }
+         
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .section-padding30 {
+         padding-top: 150px;
+         padding-bottom: 140px;
+         }
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .section-padding30 {
+         padding-top: 100px;
+         padding-bottom: 70px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .section-padding30 {
+         padding-top: 65px;
+         padding-bottom: 70px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .section-padding30 {
+         padding-top: 65px;
+         padding-bottom: 70px;
+         }
+         }
+         
+         .section-padding40 {
+         padding-top: 90px;
+         padding-bottom: 70px;
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .section-padding40 {
+         padding-top: 70px;
+         padding-bottom: 50px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .section-padding40 {
+         padding-top: 60px;
+         padding-bottom: 40px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .section-padding40 {
+         padding-top: 60px;
+         padding-bottom: 40px;
+         }
+         }
+         
+         .section-paddingt30 {
+         padding-top: 195px;
+         padding-bottom: 90px;
+         }
+         
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .section-paddingt30 {
+         padding-top: 150px;
+         padding-bottom: 90px;
+         }
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .section-paddingt30 {
+         padding-top: 100px;
+         padding-bottom: 40px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .section-paddingt30 {
+         padding-top: 65px;
+         padding-bottom: 10px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .section-paddingt30 {
+         padding-top: 65px;
+         padding-bottom: 10px;
+         }
+         }
+         
+         .section-padding3 {
+         padding-top: 150px;
+         padding-bottom: 0;
+         }
+         
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .section-padding3 {
+         padding-top: 150px;
+         padding-bottom: 0;
+         }
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .section-padding3 {
+         padding-top: 60px;
+         padding-bottom: 0;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .section-padding3 {
+         padding-top: 60px;
+         padding-bottom: 0;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .section-padding3 {
+         padding-top: 60px;
+         padding-bottom: 0;
+         }
+         }
+         
+         
+         @media (max-width: 575px) {
+         .section-title {
+         margin-bottom: 50px;
+         text-align: left !important;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .section-title {
+         margin-bottom: 50px;
+         }
+         }
+         
+         .section-title p {
+         color: #FFF;
+         }
+         
+         .section-title > span {
+         color: #FFF;
+         font-size: 20px;
+         font-weight: 600;
+         margin-bottom: 22px;
+         text-transform: capitalize;
+         display: inline-block;
+         letter-spacing: 0.05em;
+         }
+         
+         @media (max-width: 575px) {
+         .section-title > span {
+         font-size: 14px;
+         padding-left: 0px;
+         text-align: left;
+         }
+         }
+         
+         .section-title h2 {
+         font-size: 96px;
+         display: block;
+         color: #FFF;
+         font-weight: 600;
+         line-height: 1.4;
+         }
+         
+         .section-title h2 > span.title-light {
+         color: #FFF;
+         font-size: 42px;
+         }
+         
+         @media (max-width: 575px) {
+         .section-title h2 > span.title-light {
+         font-size: 28px;
+         }
+         }
+         
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .section-title h2 {
+         font-size: 41px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .section-title h2 {
+         font-size: 31px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .section-title h2 {
+         text-align: left;
+         font-size: 27px;
+         }
+         }
+         
+         .about-low-area {
+         background: linear-gradient(#5FB7E1, #0068B7);
+         position: relative;
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .about-low-area .about-caption {
+         padding-top: 50px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         /* line 5, C:/Users/HP/Desktop/jun-2020/279.Business/assets/scss/_about.scss */
+         .about-low-area .about-caption {
+         padding-top: 50px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .about-low-area .about-caption {
+         padding-top: 20px;
+         }
+         }
+         
+         .about-low-area .about-caption p {
+         font-size: 48px;
+         color: #FFF;
+         line-height: 1.6;
+         margin-bottom: 58px;
+         padding-right: 50px;
+         }
+         
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .about-low-area .about-caption p {
+         padding-right: 20px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .about-low-area .about-caption p {
+         padding-right: 0px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .about-low-area .about-caption p {
+         padding-right: 0px;
+         }
+         }
+         
+         .about-low-area .experience span {
+         color: #140C40;
+         font-size: 60px;
+         }
+         
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         .about-low-area .experience span {
+         font-size: 42px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .about-low-area .experience span {
+         font-size: 45px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .about-low-area .experience span {
+         font-size: 45px;
+         }
+         }
+         
+         .about-low-area .about-right-cap {
+         padding-top:300px;
+         margin-bottom: 100px;
+         }
+         
+         @media (max-width: 575px) {
+         .about-low-area .about-right-cap {
+         padding-top: 50px;
+         margin-bottom: 0px;
+         }
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .about-low-area .about-right-cap {
+         padding-top: 50px;
+         margin-bottom: 0px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .about-low-area .about-right-cap {
+         padding-top: 50px;
+         margin-bottom: 0px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .about-low-area .about-right-cap {
+         padding-top: 50px!important;
+         margin-bottom: 0px;
+         }
+         }
+         
+         .about-low-area .about-right-cap .about-right-img img {
+         width: 100%;
+         margin-bottom: 15px;
+         }
+         
+         .about-low-area .about-right-cap p {
+         font-size: 22px;
+         color: #140C40;
+         font-weight: 300;
+         padding: 0 10px;
+         line-height: 1.5;
+         margin-top: -65%;
+         }
+         
+         .about-low-area .about-right-cap.about-right-cap2 {
+         margin-bottom: 0px;
+         }
+         
+         @media (max-width: 575px) {
+         .about-low-area .about-right-cap.about-right-cap2 {
+         margin-bottom: 0px;
+         }
+         }
+         
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .about-low-area .about-right-cap.about-right-cap2 {
+         margin-bottom: 0px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .about-low-area .about-right-cap.about-right-cap2 {
+         margin-bottom: 0px;
+         }
+         }
+         
+         @media only screen and (min-width: 576px) and (max-width: 767px) {
+         .about-low-area .about-right-cap.about-right-cap2 {
+         margin-bottom: 0px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .about-caption {
+         margin-bottom: 35px;
+         }
+         }
+         
+         @media (max-width: 575px) {
+         .bg-height.pb-160 {
+         padding-bottom: 100px;
+         }
+         }
+         
+         .sticky-caption {
+         position: -webkit-sticky; 
+         position: sticky;
+         top: 100px;
+         z-index: 999; 
+         }
+         
+         @media (max-width: 991.98px) { 
+         .about-right-img {
+         margin-bottom: 15px; 
+         }
+         }
+         
+         
+         
+         .mid-logo {
+         display: block;
+         }
+         
+         .small-logo {
+         display: none;
+         }
+         
+         @media (max-width: 768px) {
+         .mid-logo {
+         display: none;
+         }
+         
+         .small-logo {
+         display: block;
+         }
+         }
+      /*--  END 課程時間表(報名＆課程時間表) -- */
