@@ -645,8 +645,72 @@
       transition: background-color 0.3s, color 0.3s, border-color 0.3s;
       }
       
-      .binary_button.selected {
-      color: blue;
+      .selected {
+      background-color: #0070d2;
+      color: #fff;
+      }
+      
+      .grey-box {
+      background-color: #f2f2f2; /* Grey background color */
+      padding: 10px; /* Adjust padding as needed */
+      border-radius: 5px; /* Rounded corners */
+      border: 1px solid #ccc; /* Border style */
+      }
+      
+      .accordion {
+      width: 200px;
+      }
+      
+      .accordion-item {
+      background-color: #0168b8;
+      color: #111;
+      margin: 1rem 0;
+      }
+      
+      .accordion-item-header {
+      padding: 10px 10px;
+            color: white;
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      }
+      
+      .accordion-item-header::after {
+      content: "\002B";
+      font-size: 24px;
+      position: absolute;
+      right: 0.5rem;
+      }
+      
+      .accordion-item-header.active::after {
+      content: "\2212";
+      }
+      
+      .accordion-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      }
+      
+      .accordion-item-body-up {
+      max-height: 0;
+      overflow: auto;
+      transition: max-height 0.2s ease-out;
+      }
+      
+      .accordion-item-body-content {
+      line-height: 1.5rem;
+      font-size: 15px;
+      color: white;
+      }
+      
+      .white-line {
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      border: none;
+      background-color: white;
       }
 
 
