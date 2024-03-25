@@ -172,13 +172,15 @@
       }
 
       .mainNav__links_footer {
-         padding-top: 20px;
-         display: grid;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
       }
 
       @media screen and (max-width: 799px) {
          .mainNav__links_footer {
-            
+            padding-top: 20px;
+         display: grid;
          }
       }
 
