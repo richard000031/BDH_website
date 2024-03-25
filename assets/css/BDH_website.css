@@ -314,8 +314,8 @@
       @media screen and (max-width: 799px) {
          .mainHeading__text {
             padding: 20px;
-            margin: -68px 0 40px -20px;
-            height: 200px;
+            margin: -34px 0 40px -20px;
+            height: 300px;
             width: 315px;
          }
       }
@@ -529,6 +529,16 @@
          }
       }
 
+      .breadcrumb_custom_reverse {
+         display: block;
+      }
+
+      @media screen and (max-width: 799px) {
+         .breadcrumb_custom_reverse  {
+            display: none;
+         }
+      }
+
       .info-button {
          background-color: #0168b8;
          color: white;
@@ -662,6 +672,12 @@
       .accordion {
       width: 200px;
       }
+
+      @media screen and (max-width: 799px) {
+         .accordion {
+            width: 350px;
+         }
+      }
       
       .accordion-item {
       background-color: #0168b8;
@@ -671,7 +687,7 @@
       
       .accordion-item-header {
       padding: 10px 10px;
-            color: white;
+      color: white;
       display: flex;
       align-items: center;
       position: relative;
