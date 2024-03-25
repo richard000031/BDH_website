@@ -137,8 +137,8 @@
 
       @media screen and (max-width: 799px) {
          .mainNav__logo {
-            margin-top: 975px;
-
+            margin-top: 1050px;
+            margin-right: -20px;
          }
       }
 
@@ -149,6 +149,23 @@
 
       @media screen and (max-width: 799px) {
          .mainNav__midLogo {
+            transform: translateY(380%);
+            /* padding-top: 70px; */
+            margin-bottom: -288px;
+            margin-left: -5%;
+            background-color: #f4f4f3;
+            padding: 0;
+            }
+         
+      }
+
+      .mainNav__midLogo_custom{
+         margin-top: 440px;
+         margin-left: -3%;
+      }
+
+      @media screen and (max-width: 799px) {
+         .mainNav__midLogo_custom {
             transform: translateY(380%);
             /* padding-top: 70px; */
             margin-bottom: -288px;
@@ -647,7 +664,7 @@
       .binary_button {
       padding: 10px 10px;
       width: 30px;
-      height: 30px;
+      /* height: 30px; */
       cursor: pointer;
       border-radius: 50%;
       border: 2px solid black;
@@ -729,6 +746,23 @@
       height: 1px;
       border: none;
       background-color: white;
+      }
+
+
+      .option-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      }
+         
+      .option-box {
+      background-color: #fff;
+      /* padding: 10px; */
+      border-radius: 5px;
+      }
+         
+      .form-check-label {
+      /* margin-left: 10px; */
       }
 
 
