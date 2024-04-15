@@ -1276,3 +1276,12 @@
          }
          }
       /*--  END 課程時間表(報名＆課程時間表) -- */
+
+      /*--  START SignUp_Page -- */
+      @media (max-width: 768px) {
+         html, body {
+         width: 100%;
+         overflow-x: hidden;
+         }
+      }
+      /*--  END SignUp_Page -- */
