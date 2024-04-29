@@ -592,14 +592,14 @@
          margin-left: 20px;
       }
 
-      .input-area {
+      .form-control{
          width: 100%;
          height: 80px;
          border: none;
          background-color: #f0f0f0;
          padding-left: 15px;
          font-size: 20px;
-      }
+         }
 
       .gradient-line {
          position: absolute;
